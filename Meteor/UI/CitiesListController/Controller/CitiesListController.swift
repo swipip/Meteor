@@ -11,6 +11,12 @@ import CoreLocation
 class CitiesListController: UIViewController {
     
     // MARK: UI elements 􀯱
+    private lazy var backButton: UIButton = {
+        let button = UIButton()
+        button.backPlain()
+        button.addTarget(self, action: #selector(backButtonPressed), for: .touchUpInside)
+        return button
+    }()
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var restartButton: LoaderButton!
     
@@ -26,6 +32,9 @@ class CitiesListController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: "weather1")
+        
+        navigationController?.interactivePopGestureRecognizer?.delegate = nil
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
         
         locationManager.delegate = self
         locationManager.requestLocation()
@@ -45,6 +54,9 @@ class CitiesListController: UIViewController {
     // MARK: Navigation 􀋒
     
     // MARK: Interactions 􀛹
+    @objc func backButtonPressed() {
+        navigationController?.popViewController(animated: true)
+    }
     func reload() {
         restartButton.startLoading(duration: 60)
         viewModel.resetResults()
@@ -181,4 +193,7 @@ extension CitiesListController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
     }
+}
+extension CitiesListController: UINavigationControllerDelegate {
+    
 }
