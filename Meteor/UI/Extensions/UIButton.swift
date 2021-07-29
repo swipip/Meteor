@@ -17,4 +17,10 @@ extension UIButton {
         self.tintColor = .white
         self.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
     }
+    
+    func backPlain() {
+        self.tintColor = .white
+        let config = UIImage.SymbolConfiguration(pointSize: 32)
+        self.setImage(UIImage(systemName: "chevron.left.circle.fill", withConfiguration: config), for: .normal)
+    }
 }
