@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CitiesListController" customModule="Meteor" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="sVo-0F-itS" id="moD-4k-UZX"/>
+                <outlet property="restartButton" destination="uJ9-yu-uDl" id="Wk9-Zw-MdX"/>
+                <outlet property="view" destination="iN0-l3-epB" id="wIH-vu-lad"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="sVo-0F-itS">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PcH-h1-vdp">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJ9-yu-uDl" customClass="LoaderButton" customModule="Meteor" customModuleProvider="target">
+                    <rect key="frame" x="10" y="780" width="394" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="YbQ-Vk-h7X"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" title="Recommencer"/>
+                    <connections>
+                        <action selector="restartButtonPressed:" destination="-1" eventType="touchUpInside" id="PAr-bm-bwo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sVo-0F-itS" secondAttribute="bottom" id="1ph-mv-Vhy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uJ9-yu-uDl" secondAttribute="trailing" constant="10" id="9a6-uN-h4o"/>
+                <constraint firstItem="sVo-0F-itS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BhA-2k-ypk"/>
+                <constraint firstItem="sVo-0F-itS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="U3k-Qp-cfJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sVo-0F-itS" secondAttribute="trailing" id="VmY-af-3Tu"/>
+                <constraint firstItem="uJ9-yu-uDl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="n3N-Js-4gb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="uJ9-yu-uDl" secondAttribute="bottom" constant="32" id="vku-wu-EwZ"/>
+            </constraints>
+            <point key="canvasLocation" x="-19" y="132"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

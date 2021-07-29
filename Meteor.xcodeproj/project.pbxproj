@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49078FE126B2D4F500EE45C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49078FE026B2D4F500EE45C9 /* AppDelegate.swift */; };
+		49078FE326B2D4F500EE45C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49078FE226B2D4F500EE45C9 /* SceneDelegate.swift */; };
+		49078FE526B2D4F500EE45C9 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49078FE426B2D4F500EE45C9 /* RootController.swift */; };
+		49078FEA26B2D4F800EE45C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49078FE926B2D4F800EE45C9 /* Assets.xcassets */; };
+		49078FED26B2D4F800EE45C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49078FEB26B2D4F800EE45C9 /* LaunchScreen.storyboard */; };
+		49078FF826B2D4F800EE45C9 /* MeteorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49078FF726B2D4F800EE45C9 /* MeteorTests.swift */; };
+		4907900326B2D4F800EE45C9 /* MeteorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907900226B2D4F800EE45C9 /* MeteorUITests.swift */; };
+		4907901326B2D59B00EE45C9 /* RootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4907901226B2D59B00EE45C9 /* RootController.xib */; };
+		4907901626B2DB0500EE45C9 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907901526B2DB0500EE45C9 /* UINavigationBar.swift */; };
+		4907901826B2DCF100EE45C9 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907901726B2DCF100EE45C9 /* UIButton.swift */; };
+		4907901A26B2DD5D00EE45C9 /* CitiesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907901926B2DD5D00EE45C9 /* CitiesListController.swift */; };
+		4907901C26B2DD6700EE45C9 /* CitiesListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4907901B26B2DD6700EE45C9 /* CitiesListController.xib */; };
+		4907901F26B2E19800EE45C9 /* LoaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907901E26B2E19800EE45C9 /* LoaderButton.swift */; };
+		4907902426B2E22300EE45C9 /* OWModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907902326B2E22300EE45C9 /* OWModel.swift */; };
+		4907902626B2E24300EE45C9 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907902526B2E24300EE45C9 /* NetworkingManager.swift */; };
+		4907902A26B2E45B00EE45C9 /* CityWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907902926B2E45B00EE45C9 /* CityWeatherCell.swift */; };
+		4907902C26B2E45F00EE45C9 /* CityWeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4907902B26B2E45F00EE45C9 /* CityWeatherCell.xib */; };
+		4907902E26B2E55D00EE45C9 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907902D26B2E55D00EE45C9 /* UICollectionView.swift */; };
+		4907903026B2E63100EE45C9 /* CitiesListControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907902F26B2E63100EE45C9 /* CitiesListControllerViewModel.swift */; };
+		4907903326B2EDCD00EE45C9 /* CityListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907903226B2EDCD00EE45C9 /* CityListHeader.swift */; };
+		4907903526B2EDFE00EE45C9 /* CityListHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4907903426B2EDFE00EE45C9 /* CityListHeader.xib */; };
+		4907903726B2F55600EE45C9 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907903626B2F55600EE45C9 /* K.swift */; };
+		4907903926B2FB7700EE45C9 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907903826B2FB7700EE45C9 /* NetworkingTests.swift */; };
+		4907903B26B2FE4900EE45C9 /* WeatherCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907903A26B2FE4900EE45C9 /* WeatherCellTests.swift */; };
+		4907903F26B3028B00EE45C9 /* LocalWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907903E26B3028B00EE45C9 /* LocalWeatherCell.swift */; };
+		4907904126B3028F00EE45C9 /* LocalWeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4907904026B3028F00EE45C9 /* LocalWeatherCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49078FF426B2D4F800EE45C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49078FD526B2D4F500EE45C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49078FDC26B2D4F500EE45C9;
+			remoteInfo = Meteor;
+		};
+		49078FFF26B2D4F800EE45C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49078FD526B2D4F500EE45C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49078FDC26B2D4F500EE45C9;
+			remoteInfo = Meteor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49078FDD26B2D4F500EE45C9 /* Meteor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meteor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49078FE026B2D4F500EE45C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49078FE226B2D4F500EE45C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		49078FE426B2D4F500EE45C9 /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		49078FE926B2D4F800EE45C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49078FEC26B2D4F800EE45C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49078FEE26B2D4F800EE45C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49078FF326B2D4F800EE45C9 /* MeteorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeteorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49078FF726B2D4F800EE45C9 /* MeteorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorTests.swift; sourceTree = "<group>"; };
+		49078FF926B2D4F800EE45C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49078FFE26B2D4F800EE45C9 /* MeteorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeteorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4907900226B2D4F800EE45C9 /* MeteorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorUITests.swift; sourceTree = "<group>"; };
+		4907900426B2D4F800EE45C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4907901226B2D59B00EE45C9 /* RootController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootController.xib; sourceTree = "<group>"; };
+		4907901526B2DB0500EE45C9 /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
+		4907901726B2DCF100EE45C9 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		4907901926B2DD5D00EE45C9 /* CitiesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListController.swift; sourceTree = "<group>"; };
+		4907901B26B2DD6700EE45C9 /* CitiesListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitiesListController.xib; sourceTree = "<group>"; };
+		4907901E26B2E19800EE45C9 /* LoaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderButton.swift; sourceTree = "<group>"; };
+		4907902326B2E22300EE45C9 /* OWModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWModel.swift; sourceTree = "<group>"; };
+		4907902526B2E24300EE45C9 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		4907902926B2E45B00EE45C9 /* CityWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherCell.swift; sourceTree = "<group>"; };
+		4907902B26B2E45F00EE45C9 /* CityWeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityWeatherCell.xib; sourceTree = "<group>"; };
+		4907902D26B2E55D00EE45C9 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		4907902F26B2E63100EE45C9 /* CitiesListControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListControllerViewModel.swift; sourceTree = "<group>"; };
+		4907903226B2EDCD00EE45C9 /* CityListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListHeader.swift; sourceTree = "<group>"; };
+		4907903426B2EDFE00EE45C9 /* CityListHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityListHeader.xib; sourceTree = "<group>"; };
+		4907903626B2F55600EE45C9 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		4907903826B2FB7700EE45C9 /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		4907903A26B2FE4900EE45C9 /* WeatherCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCellTests.swift; sourceTree = "<group>"; };
+		4907903E26B3028B00EE45C9 /* LocalWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalWeatherCell.swift; sourceTree = "<group>"; };
+		4907904026B3028F00EE45C9 /* LocalWeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalWeatherCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49078FDA26B2D4F500EE45C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49078FF026B2D4F800EE45C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49078FFB26B2D4F800EE45C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49078FD426B2D4F500EE45C9 = {
+			isa = PBXGroup;
+			children = (
+				49078FDF26B2D4F500EE45C9 /* Meteor */,
+				49078FF626B2D4F800EE45C9 /* MeteorTests */,
+				4907900126B2D4F800EE45C9 /* MeteorUITests */,
+				49078FDE26B2D4F500EE45C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49078FDE26B2D4F500EE45C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49078FDD26B2D4F500EE45C9 /* Meteor.app */,
+				49078FF326B2D4F800EE45C9 /* MeteorTests.xctest */,
+				49078FFE26B2D4F800EE45C9 /* MeteorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49078FDF26B2D4F500EE45C9 /* Meteor */ = {
+			isa = PBXGroup;
+			children = (
+				4907902226B2E21900EE45C9 /* Model */,
+				4907902126B2E20C00EE45C9 /* Networking */,
+				49078FE026B2D4F500EE45C9 /* AppDelegate.swift */,
+				49078FE226B2D4F500EE45C9 /* SceneDelegate.swift */,
+				4907901026B2D58A00EE45C9 /* UI */,
+				49078FE926B2D4F800EE45C9 /* Assets.xcassets */,
+				49078FEB26B2D4F800EE45C9 /* LaunchScreen.storyboard */,
+				49078FEE26B2D4F800EE45C9 /* Info.plist */,
+				4907903626B2F55600EE45C9 /* K.swift */,
+			);
+			path = Meteor;
+			sourceTree = "<group>";
+		};
+		49078FF626B2D4F800EE45C9 /* MeteorTests */ = {
+			isa = PBXGroup;
+			children = (
+				49078FF726B2D4F800EE45C9 /* MeteorTests.swift */,
+				4907903A26B2FE4900EE45C9 /* WeatherCellTests.swift */,
+				4907903826B2FB7700EE45C9 /* NetworkingTests.swift */,
+				49078FF926B2D4F800EE45C9 /* Info.plist */,
+			);
+			path = MeteorTests;
+			sourceTree = "<group>";
+		};
+		4907900126B2D4F800EE45C9 /* MeteorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4907900226B2D4F800EE45C9 /* MeteorUITests.swift */,
+				4907900426B2D4F800EE45C9 /* Info.plist */,
+			);
+			path = MeteorUITests;
+			sourceTree = "<group>";
+		};
+		4907901026B2D58A00EE45C9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4907901D26B2E18600EE45C9 /* CommonElements */,
+				4907901426B2DAF800EE45C9 /* Extensions */,
+				4907901126B2D59300EE45C9 /* Root */,
+				4907902026B2E20400EE45C9 /* CitiesListController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4907901126B2D59300EE45C9 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				49078FE426B2D4F500EE45C9 /* RootController.swift */,
+				4907901226B2D59B00EE45C9 /* RootController.xib */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		4907901426B2DAF800EE45C9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4907901526B2DB0500EE45C9 /* UINavigationBar.swift */,
+				4907901726B2DCF100EE45C9 /* UIButton.swift */,
+				4907902D26B2E55D00EE45C9 /* UICollectionView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4907901D26B2E18600EE45C9 /* CommonElements */ = {
+			isa = PBXGroup;
+			children = (
+				4907901E26B2E19800EE45C9 /* LoaderButton.swift */,
+			);
+			path = CommonElements;
+			sourceTree = "<group>";
+		};
+		4907902026B2E20400EE45C9 /* CitiesListController */ = {
+			isa = PBXGroup;
+			children = (
+				4907903126B2EDBC00EE45C9 /* Headers */,
+				4907902826B2E44A00EE45C9 /* Cells */,
+				4907902726B2E44400EE45C9 /* Controller */,
+			);
+			path = CitiesListController;
+			sourceTree = "<group>";
+		};
+		4907902126B2E20C00EE45C9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4907902526B2E24300EE45C9 /* NetworkingManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4907902226B2E21900EE45C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4907902326B2E22300EE45C9 /* OWModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4907902726B2E44400EE45C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4907901926B2DD5D00EE45C9 /* CitiesListController.swift */,
+				4907902F26B2E63100EE45C9 /* CitiesListControllerViewModel.swift */,
+				4907901B26B2DD6700EE45C9 /* CitiesListController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4907902826B2E44A00EE45C9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4907903D26B3027B00EE45C9 /* LocalWeather */,
+				4907903C26B3027000EE45C9 /* CityWeather */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4907903126B2EDBC00EE45C9 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				4907903226B2EDCD00EE45C9 /* CityListHeader.swift */,
+				4907903426B2EDFE00EE45C9 /* CityListHeader.xib */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		4907903C26B3027000EE45C9 /* CityWeather */ = {
+			isa = PBXGroup;
+			children = (
+				4907902926B2E45B00EE45C9 /* CityWeatherCell.swift */,
+				4907902B26B2E45F00EE45C9 /* CityWeatherCell.xib */,
+			);
+			path = CityWeather;
+			sourceTree = "<group>";
+		};
+		4907903D26B3027B00EE45C9 /* LocalWeather */ = {
+			isa = PBXGroup;
+			children = (
+				4907903E26B3028B00EE45C9 /* LocalWeatherCell.swift */,
+				4907904026B3028F00EE45C9 /* LocalWeatherCell.xib */,
+			);
+			path = LocalWeather;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49078FDC26B2D4F500EE45C9 /* Meteor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4907900726B2D4F800EE45C9 /* Build configuration list for PBXNativeTarget "Meteor" */;
+			buildPhases = (
+				49078FD926B2D4F500EE45C9 /* Sources */,
+				49078FDA26B2D4F500EE45C9 /* Frameworks */,
+				49078FDB26B2D4F500EE45C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meteor;
+			productName = Meteor;
+			productReference = 49078FDD26B2D4F500EE45C9 /* Meteor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49078FF226B2D4F800EE45C9 /* MeteorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4907900A26B2D4F800EE45C9 /* Build configuration list for PBXNativeTarget "MeteorTests" */;
+			buildPhases = (
+				49078FEF26B2D4F800EE45C9 /* Sources */,
+				49078FF026B2D4F800EE45C9 /* Frameworks */,
+				49078FF126B2D4F800EE45C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49078FF526B2D4F800EE45C9 /* PBXTargetDependency */,
+			);
+			name = MeteorTests;
+			productName = MeteorTests;
+			productReference = 49078FF326B2D4F800EE45C9 /* MeteorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49078FFD26B2D4F800EE45C9 /* MeteorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4907900D26B2D4F800EE45C9 /* Build configuration list for PBXNativeTarget "MeteorUITests" */;
+			buildPhases = (
+				49078FFA26B2D4F800EE45C9 /* Sources */,
+				49078FFB26B2D4F800EE45C9 /* Frameworks */,
+				49078FFC26B2D4F800EE45C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4907900026B2D4F800EE45C9 /* PBXTargetDependency */,
+			);
+			name = MeteorUITests;
+			productName = MeteorUITests;
+			productReference = 49078FFE26B2D4F800EE45C9 /* MeteorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49078FD526B2D4F500EE45C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					49078FDC26B2D4F500EE45C9 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					49078FF226B2D4F800EE45C9 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 49078FDC26B2D4F500EE45C9;
+					};
+					49078FFD26B2D4F800EE45C9 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 49078FDC26B2D4F500EE45C9;
+					};
+				};
+			};
+			buildConfigurationList = 49078FD826B2D4F500EE45C9 /* Build configuration list for PBXProject "Meteor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49078FD426B2D4F500EE45C9;
+			productRefGroup = 49078FDE26B2D4F500EE45C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49078FDC26B2D4F500EE45C9 /* Meteor */,
+				49078FF226B2D4F800EE45C9 /* MeteorTests */,
+				49078FFD26B2D4F800EE45C9 /* MeteorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49078FDB26B2D4F500EE45C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4907902C26B2E45F00EE45C9 /* CityWeatherCell.xib in Resources */,
+				4907903526B2EDFE00EE45C9 /* CityListHeader.xib in Resources */,
+				4907901C26B2DD6700EE45C9 /* CitiesListController.xib in Resources */,
+				49078FED26B2D4F800EE45C9 /* LaunchScreen.storyboard in Resources */,
+				4907901326B2D59B00EE45C9 /* RootController.xib in Resources */,
+				4907904126B3028F00EE45C9 /* LocalWeatherCell.xib in Resources */,
+				49078FEA26B2D4F800EE45C9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49078FF126B2D4F800EE45C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49078FFC26B2D4F800EE45C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49078FD926B2D4F500EE45C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4907901826B2DCF100EE45C9 /* UIButton.swift in Sources */,
+				4907903726B2F55600EE45C9 /* K.swift in Sources */,
+				49078FE526B2D4F500EE45C9 /* RootController.swift in Sources */,
+				4907901A26B2DD5D00EE45C9 /* CitiesListController.swift in Sources */,
+				49078FE126B2D4F500EE45C9 /* AppDelegate.swift in Sources */,
+				4907903F26B3028B00EE45C9 /* LocalWeatherCell.swift in Sources */,
+				4907903326B2EDCD00EE45C9 /* CityListHeader.swift in Sources */,
+				4907901F26B2E19800EE45C9 /* LoaderButton.swift in Sources */,
+				4907902A26B2E45B00EE45C9 /* CityWeatherCell.swift in Sources */,
+				49078FE326B2D4F500EE45C9 /* SceneDelegate.swift in Sources */,
+				4907903026B2E63100EE45C9 /* CitiesListControllerViewModel.swift in Sources */,
+				4907902626B2E24300EE45C9 /* NetworkingManager.swift in Sources */,
+				4907901626B2DB0500EE45C9 /* UINavigationBar.swift in Sources */,
+				4907902E26B2E55D00EE45C9 /* UICollectionView.swift in Sources */,
+				4907902426B2E22300EE45C9 /* OWModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49078FEF26B2D4F800EE45C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49078FF826B2D4F800EE45C9 /* MeteorTests.swift in Sources */,
+				4907903926B2FB7700EE45C9 /* NetworkingTests.swift in Sources */,
+				4907903B26B2FE4900EE45C9 /* WeatherCellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49078FFA26B2D4F800EE45C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4907900326B2D4F800EE45C9 /* MeteorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49078FF526B2D4F800EE45C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49078FDC26B2D4F500EE45C9 /* Meteor */;
+			targetProxy = 49078FF426B2D4F800EE45C9 /* PBXContainerItemProxy */;
+		};
+		4907900026B2D4F800EE45C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49078FDC26B2D4F500EE45C9 /* Meteor */;
+			targetProxy = 49078FFF26B2D4F800EE45C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49078FEB26B2D4F800EE45C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49078FEC26B2D4F800EE45C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4907900526B2D4F800EE45C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4907900626B2D4F800EE45C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4907900826B2D4F800EE45C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZK349YW98;
+				INFOPLIST_FILE = Meteor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GautierBillard.Meteor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4907900926B2D4F800EE45C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZK349YW98;
+				INFOPLIST_FILE = Meteor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GautierBillard.Meteor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4907900B26B2D4F800EE45C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZK349YW98;
+				INFOPLIST_FILE = MeteorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GautierBillard.MeteorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meteor.app/Meteor";
+			};
+			name = Debug;
+		};
+		4907900C26B2D4F800EE45C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZK349YW98;
+				INFOPLIST_FILE = MeteorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GautierBillard.MeteorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meteor.app/Meteor";
+			};
+			name = Release;
+		};
+		4907900E26B2D4F800EE45C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZK349YW98;
+				INFOPLIST_FILE = MeteorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GautierBillard.MeteorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Meteor;
+			};
+			name = Debug;
+		};
+		4907900F26B2D4F800EE45C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZK349YW98;
+				INFOPLIST_FILE = MeteorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GautierBillard.MeteorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Meteor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49078FD826B2D4F500EE45C9 /* Build configuration list for PBXProject "Meteor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4907900526B2D4F800EE45C9 /* Debug */,
+				4907900626B2D4F800EE45C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4907900726B2D4F800EE45C9 /* Build configuration list for PBXNativeTarget "Meteor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4907900826B2D4F800EE45C9 /* Debug */,
+				4907900926B2D4F800EE45C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4907900A26B2D4F800EE45C9 /* Build configuration list for PBXNativeTarget "MeteorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4907900B26B2D4F800EE45C9 /* Debug */,
+				4907900C26B2D4F800EE45C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4907900D26B2D4F800EE45C9 /* Build configuration list for PBXNativeTarget "MeteorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4907900E26B2D4F800EE45C9 /* Debug */,
+				4907900F26B2D4F800EE45C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49078FD526B2D4F500EE45C9 /* Project object */;
+}
