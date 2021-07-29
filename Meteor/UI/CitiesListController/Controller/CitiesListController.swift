@@ -45,11 +45,14 @@ class CitiesListController: UIViewController {
     // MARK: Navigation 􀋒
     
     // MARK: Interactions 􀛹
-    @IBAction func restartButtonPressed(_ sender: UIButton) {
+    func reload() {
         restartButton.startLoading(duration: 60)
         viewModel.resetResults()
         applySnapshot([])
         loadCitiesWeatherForDefaultCities()
+    }
+    @IBAction func restartButtonPressed(_ sender: UIButton) {
+        reload()
     }
     func loadCitiesWeatherForDefaultCities() {
         var delay: TimeInterval = 10
@@ -64,7 +67,7 @@ class CitiesListController: UIViewController {
     }
     // MARK: UI construction 􀤋
     func updateUI(for weather: OWResultModel?) {
-        let color = weather?.weather.first?.getWeatherUIPack()?.color
+        let color = weather?.weather.first?.getWeatherUIPack()?.color ?? K.colors.weather1
         
         view.backgroundColor = color
         restartButton.backgroundColor = color
@@ -141,6 +144,15 @@ extension CitiesListController: UICollectionViewDelegate, UICollectionViewDelega
     }
 }
 extension CitiesListController: CitiesListControllerViewModelDelegate {
+    func citiesListControllerViewModel(failledToFindWeather error: Error) {
+        let alert = UIAlertController(title: "Oops", message: "Une erreur est survenue, nous n'avons pas réussi à trouver la météo.", preferredStyle: .alert)
+        alert.addAction(.init(title: "Ressayer", style: .default, handler: { [weak self] alert in
+            self?.reload()
+        }))
+        alert.view.tintColor = .label
+        present(alert, animated: true, completion: nil)
+    }
+    
     func citiesListControllerViewModel(didLoadLocalWeather weather: OWResultModel?, otherCities: [OWResultModel]) {
         updateUI(for: weather)
         applySnapshot(otherCities)

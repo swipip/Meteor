@@ -9,6 +9,7 @@ import Foundation
 import CoreLocation
 
 protocol CitiesListControllerViewModelDelegate: AnyObject {
+    func citiesListControllerViewModel(failledToFindWeather error: Error)
     func citiesListControllerViewModel(didLoadWeather weather: [OWResultModel])
     func citiesListControllerViewModel(didLoadLocalWeather weather: OWResultModel?, otherCities: [OWResultModel])
 }
@@ -46,7 +47,7 @@ class CitiesListControllerViewModel {
         NetworkingManager.shared.loadWeather(foLocation: location) { [weak self] result in
             switch result {
             case.failure(let err):
-                print(err)
+                self?.delegate?.citiesListControllerViewModel(failledToFindWeather: err)
             case .success(let model):
                 if isCurrentLocation {
                     self?.localWeather = model
